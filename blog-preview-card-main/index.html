@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="icon"
@@ -25,21 +32,29 @@
       }
     </style>
   </head>
-  <body class="bg-[#f4d04e]">
-    <main class="min-h-screen flex flex-col justify-between items-center">
+  <body class="bg-[#f4d04e] font-['Figtree']">
+    <main
+      class="min-h-screen flex flex-col justify-between items-center text-[#121212]"
+    >
       <div></div>
-      <section class="rounded-3xl border border-black p-6 bg-white max-w-sm">
+      <section
+        class="rounded-3xl border border-black p-6 bg-white sm:max-w-sm max-w-[20rem] shadow-[10px_10px_0px_3px_rgba(18,18,18,1);]"
+      >
         <img
           src="assets/images/illustration-article.svg"
           class="w-full mb-7 rounded-2xl"
           alt=""
         />
-        <div class="inline-flex bg-yellow-400 font-bold px-3 py-1 rounded-md">
+        <div
+          class="inline-flex bg-[#f4d04e] font-extrabold px-3 py-1 rounded-md"
+        >
           Learning
         </div>
-        <div class="my-4">Published 21 Dec 2023</div>
-        <h3 class="text-2xl font-bold my-3">HTML & CSS foundations</h3>
-        <p class="mt-4 mb-6">
+        <div class="my-4 font-medium">Published 21 Dec 2023</div>
+        <h3 class="text-2xl font-extrabold my-3 hover:text-[#f4d04e]">
+          HTML & CSS foundations
+        </h3>
+        <p class="mt-4 mb-6 font-medium">
           These languages are the backbone of every website, defining structure,
           content, and presentation.
         </p>
@@ -49,14 +64,14 @@
             src="assets/images/image-avatar.webp"
             alt="avatar-greg"
           />
-          <span class="font-bold"> Greg Hooper </span>
+          <span class="font-extrabold">Greg Hooper</span>
         </div>
       </section>
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">naufal</a>.
       </div>
     </main>
   </body>
